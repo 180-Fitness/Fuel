@@ -1,0 +1,156 @@
+.checkout-modal-container {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  .dialog-wrapper {
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .close-action {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+    line-height: 1;
+    color: #333;
+    font-family: var(--font-body);
+  }
+
+  .header-wrapper h2 {
+    margin: 0 0 10px;
+    padding-right: 28px;
+    font-size: 1.35rem;
+  }
+
+  .summary-wrapper {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  .summary-title {
+    font-weight: bold;
+    margin: 0 0 8px;
+  }
+
+  .empty-message {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .lines-wrapper {
+    margin-bottom: 4px;
+  }
+
+  .grand-total {
+    font-weight: bold;
+    margin: 10px 0 0;
+    color: #222;
+  }
+
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 8px;
+  }
+
+  .input-field {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--font-body);
+  }
+
+  .field-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .delivery-fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .delivery-fieldset legend {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0 6px;
+    color: #333;
+  }
+
+  .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
+  .radio-option input {
+    width: auto;
+    margin: 0;
+  }
+
+  .pickup-wrapper,
+  .shipping-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .error-banner {
+    color: #b00020;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .submit-action {
+    background-color: #635bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--font-body);
+  }
+
+  .submit-action:hover:not(:disabled) {
+    background-color: #4b45c6;
+  }
+
+  .submit-action:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}

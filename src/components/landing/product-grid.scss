@@ -1,0 +1,17 @@
+.product-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid-container .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
