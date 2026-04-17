@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Production: prefix /180-Fuel/ for org Pages (…github.io/180-Fuel/). Apex/custom domain: use "/".
+// Production: must match the GitHub Pages path (…github.io/<REPO>/). Live: …/Fuel/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/180-Fuel/" : "/",
+  base: mode === "production" ? "/Fuel/" : "/",
   plugins: [react()],
   server: {
     proxy: {
